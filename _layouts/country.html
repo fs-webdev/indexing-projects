@@ -1,0 +1,41 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} — FS Indexing</title>
+  <link rel="stylesheet" href="//familysearch.org/hf/hf.css">
+  <link rel="stylesheet" href="//familysearch.org/hf/engage-type.css"> 
+  <link rel="stylesheet" href="css/default.css">
+  <!--[if lt IE 9]>
+    <script src="https://familysearch.org/hf/html5shiv.js"></script>
+  <![endif]-->
+  <!-- Optional Engage Typography stylesheet -->
+  <script type="text/javascript">
+    (function() {
+      var fs = document.createElement('script'); fs.type = 'text/javascript'; fs.async = true;
+      var params = "?";
+      params += "app_name=" + ""; // tree | photos | temple | etc... - sets the active tab.
+      //params += "&"; //needed if multiple params are set
+      //params += "base_url=" + "https://familysearch.org"; //use this if you need to override your nav links.
+      fs.src = 'https://familysearch.org/hf/hf.js' + params;
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fs, s);
+    })();
+  </script>
+</head>
+<body>
+
+  <header class="global-engage-nav-loading"></header>
+
+  <div style="max-width: 1170px; margin: 0 auto;">
+    
+    {{ content }}
+    
+  </div>
+  
+  <div>
+    {{ site.posts }}
+  </div>
+   
+  <footer></footer>
+  
+</body>
+</html>
