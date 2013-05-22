@@ -1,13 +1,14 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>FamilySearch Indexing Projects</title>
+  <title>{{ page.title }} — FS Indexing</title>
   <link rel="stylesheet" href="//familysearch.org/hf/hf.css">
+  <link rel="stylesheet" href="//familysearch.org/hf/engage-type.css"> 
+  <link rel="stylesheet" href="css/default.css">
   <!--[if lt IE 9]>
     <script src="https://familysearch.org/hf/html5shiv.js"></script>
   <![endif]-->
   <!-- Optional Engage Typography stylesheet -->
-  <link rel="stylesheet" href="//familysearch.org/hf/engage-type.css"> 
   <script type="text/javascript">
     (function() {
       var fs = document.createElement('script'); fs.type = 'text/javascript'; fs.async = true;
@@ -24,7 +25,11 @@
 
   <header class="global-engage-nav-loading"></header>
 
-  {{ content }}
+  <div style="max-width: 1170px; margin: 0 auto;">
+    
+    {{ content }}
+    
+  </div>
    
   <footer></footer>
   
