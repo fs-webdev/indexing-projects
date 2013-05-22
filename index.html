@@ -11,3 +11,15 @@ title: FS Indexing Projects
   <li><a href="mexico">Mexico directory</a></li>
   <li><a href="test">Nic's test page</a></li>
 </ul>
+
+
+  <h2>Generated list of pages: </h2>
+  <div id="pages">
+    <ul>
+      {% for page in site.html_pages %}
+        {% if page.title %}
+            <li><a href="{{ page.url | remove:'index.html' }}">{{ page.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
